@@ -1,0 +1,1 @@
+<div class="text-center p-2">{{ env('APP_NAME') }} &copy; {{ date('Y') }}</div>

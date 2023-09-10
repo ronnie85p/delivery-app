@@ -1,0 +1,22 @@
+body {
+}
+
+.container {
+}
+
+.page-header {
+    background-color: #08a14b;
+}
+
+.page-content {
+    height: 100vh;
+}
+
+.page-footer {
+    background-color: #0f2c22;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
