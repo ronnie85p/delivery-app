@@ -2,17 +2,13 @@
 
 abstract class ServiceAbstract
 {
-    protected $name = '';
-    protected $source_kladr = '';
-    protected $target_kladr = '';
-    protected $weight = 0.00;
+    protected $name;
 
-    function __construct(string $source_kladr, string $target_kladr, float $weight)
-    {
-        $this->source_kladr = $source_kladr;
-        $this->target_kladr = $target_kladr;
-        $this->weight = $weight;
-    }
+    function __construct(
+        protected string $source_kladr, 
+        protected string $target_kladr, 
+        protected float $weight
+    ) { }
 
     public function fetch()
     {
