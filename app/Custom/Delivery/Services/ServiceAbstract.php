@@ -20,6 +20,14 @@ abstract class ServiceAbstract
         return $resource;
     }
 
+    public function getData()
+    {
+        return array_merge(
+            $this->fetch(),
+            [ 'service' => $this->getInfo() ] 
+        );
+    }
+
     public function getInfo()
     {
         return ['name' => $this->name];
