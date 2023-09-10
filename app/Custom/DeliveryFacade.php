@@ -7,9 +7,9 @@ class DeliveryFacade
     {
         if (class_exists($service_class)) {
             return new $service_class(
-                (string) $data['source_kladr'], 
-                (string) $data['target_kladr'], 
-                (float) $data['weight']
+                source_kladr: (string) $data['source_kladr'], 
+                target_kladr: (string) $data['target_kladr'], 
+                weight: (float) $data['weight']
             );
         }
     }
